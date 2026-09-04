@@ -43,6 +43,7 @@ G2AK_NO_COMMIT=1 bash patch.sh    # 패치 커밋 생략
 | `frontend/src/app/app-shell.tsx` | 언어 메뉴에 "한국어" 항목 추가 |
 | `frontend/index.html` | `lang="ko"` |
 | `README.ko.md` | 한국어 사용 안내 배치 |
+| `.env` | `GROK2API_IMAGE=ghcr.io/jkh0kr/grok2api-kor:latest` — `docker compose up -d`만으로 한글 이미지 배포 |
 
 upstream의 zh-CN/en 리소스는 그대로 보존되며, 바이너리·로직은 전혀 건드리지 않습니다.
 번역 누락 문구는 자동으로 영어로 표시되고, `{{placeholder}}` 집합이 달라진 문구는 렌더링 보호를 위해

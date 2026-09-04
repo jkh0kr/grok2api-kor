@@ -16,7 +16,7 @@
 | 나머지 기능 | — | upstream과 동일 (바이너리/로직 무변경) |
 
 변경 파일은 `frontend/src/shared/i18n/index.ts`(ko 로케일 추가), `app-shell.tsx`(언어 메뉴),
-`index.html`(lang=ko), `README.ko.md`뿐입니다. `git log -1`으로 패치 시점의 upstream 커밋을 확인할 수 있습니다.
+`index.html`(lang=ko), `README.ko.md`, `.env`(한국어 이미지 지정)뿐입니다. `git log -1`으로 패치 시점의 upstream 커밋을 확인할 수 있습니다.
 
 ## 빠른 시작
 
@@ -41,21 +41,21 @@ bootstrapAdmin:
   password: "강한 비밀번호"
 ```
 
-실행:
+실행 (패처가 `.env`에 한국어 이미지를 지정해 두므로 그대로 올리면 됩니다):
 
 ```bash
 docker compose pull && docker compose up -d
 docker compose logs -f grok2api
 ```
 
+> `.env`의 `GROK2API_IMAGE=ghcr.io/jkh0kr/grok2api-kor:latest`가 한국어 패치 이미지를 가리킵니다.
+> 이 줄을 지우면 upstream 원본 이미지(`ghcr.io/chenyme/grok2api`)가 올라갑니다.
+> 소스에서 직접 빌드하려면: `docker build -t grok2api-kor:local .` 후
+> `.env`에 `GROK2API_IMAGE=grok2api-kor:local`을 지정하세요.
+
 브라우저에서 `http://127.0.0.1:8000` 을 열면 한국어 관리 콘솔이 나타납니다.
-
-한국어 패치가 미리 적용된 이미지(`ghcr.io/jkh0kr/grok2api-kor`)를 쓰려면:
-
-```bash
-GROK2API_IMAGE=ghcr.io/jkh0kr/grok2api-kor:latest docker compose pull
-GROK2API_IMAGE=ghcr.io/jkh0kr/grok2api-kor:latest docker compose up -d
-```
+**이전에 중국어/영어로 사용하던 브라우저라면 언어 메뉴에서 "한국어"를 한 번 선택하세요.**
+(언어 선택이 브라우저 localStorage에 저장되어 이전 값이 유지됩니다.)
 
 자세한 설정(계정 연결, 모델 라우팅, 프록시, 품질 가드 등)은
 [upstream README](https://github.com/chenyme/grok2api#readme)를 참고하세요.
