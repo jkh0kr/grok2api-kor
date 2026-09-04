@@ -13,10 +13,13 @@
 | 관리 콘솔 언어 | 중국어(기본) / 영어 | **한국어(기본)** / 영어 / 중국어 |
 | 첫 방문 언어 | zh-CN | **ko** (브라우저 저장값이 있으면 유지) |
 | 언어 메뉴 | 简体中文, English | **한국어**, 简体中文, English |
+| 컨테이너 타임존 | Asia/Shanghai | **Asia/Seoul** |
+| compose 포트 매핑 | `${GROK2API_PORT:-8000}:8000` | **`${GROK2API_PORT:-13256}:8000`** (시놀로지 등 8000 불가 환경 대응) |
 | 나머지 기능 | — | upstream과 동일 (바이너리/로직 무변경) |
 
 변경 파일은 `frontend/src/shared/i18n/index.ts`(ko 로케일 추가), `app-shell.tsx`(언어 메뉴),
-`index.html`(lang=ko), `README.ko.md`, `.env`(한국어 이미지 지정)뿐입니다. `git log -1`으로 패치 시점의 upstream 커밋을 확인할 수 있습니다.
+`index.html`(lang=ko), `docker-compose.yml`(TZ·포트), `Dockerfile`(TZ), `README.ko.md`, `.env`(한국어 이미지 지정)입니다.
+`git log -1`으로 패치 시점의 upstream 커밋을 확인할 수 있습니다.
 
 ## 빠른 시작
 
@@ -53,7 +56,8 @@ docker compose logs -f grok2api
 > 소스에서 직접 빌드하려면: `docker build -t grok2api-kor:local .` 후
 > `.env`에 `GROK2API_IMAGE=grok2api-kor:local`을 지정하세요.
 
-브라우저에서 `http://127.0.0.1:8000` 을 열면 한국어 관리 콘솔이 나타납니다.
+브라우저에서 `http://<호스트-IP>:13256` 을 열면 한국어 관리 콘솔이 나타납니다.
+(기본 포트 매핑이 `13256:8000`으로 패치되어 있습니다. 다른 포트를 쓰려면 `.env`에 `GROK2API_PORT=<포트>`를 추가하세요.)
 **이전에 중국어/영어로 사용하던 브라우저라면 언어 메뉴에서 "한국어"를 한 번 선택하세요.**
 (언어 선택이 브라우저 localStorage에 저장되어 이전 값이 유지됩니다.)
 

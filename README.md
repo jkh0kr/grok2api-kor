@@ -42,6 +42,8 @@ G2AK_NO_COMMIT=1 bash patch.sh    # 패치 커밋 생략
 | `frontend/src/shared/i18n/index.ts` | `ko` 로케일 추가(1,791 문구 전체 번역), 기본 언어 한국어, fallback en→zh-CN |
 | `frontend/src/app/app-shell.tsx` | 언어 메뉴에 "한국어" 항목 추가 |
 | `frontend/index.html` | `lang="ko"` |
+| `docker-compose.yml` | 타임존 기본값 `Asia/Seoul`, 포트 매핑 기본값 `13256:8000` (시놀로지 등 8000 불가 환경 대응) |
+| `Dockerfile` | `TZ=Asia/Seoul` |
 | `README.ko.md` | 한국어 사용 안내 배치 |
 | `.env` | `GROK2API_IMAGE=ghcr.io/jkh0kr/grok2api-kor:latest` — `docker compose up -d`만으로 한글 이미지 배포 |
 
