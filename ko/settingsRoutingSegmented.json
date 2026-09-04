@@ -1,0 +1,8 @@
+{
+  "enabled": "분할 선택 활성화",
+  "enabledHelp": "임계값 이상에서 적용되며 세션 고정을 지원하고, 윈도우 4회 포화 후 전체 풀 선택으로 폴백합니다.",
+  "minCandidates": "계정 임계값",
+  "minCandidatesHelp": "사용 가능한 계정 풀이 이 규모에 도달하면 분할 선택을 활성화합니다.",
+  "windowSize": "선택 윈도우",
+  "windowSizeHelp": "각 분할 윈도우에서 검토하는 후보 계정 수입니다."
+}

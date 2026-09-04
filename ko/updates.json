@@ -1,0 +1,29 @@
+{
+  "title": "정보 및 업데이트",
+  "noteTitle": "참고",
+  "noteDescription": "이 프로젝트는 기술 연구와 학습 교류 목적으로만 제공됩니다. 사용 시 Grok 공식 이용약관과 해당 지역 법률을 반드시 준수하세요. 그렇지 않은 경우 모든 결과에 대한 책임은 사용자에게 있습니다.",
+  "currentVersion": "현재 버전",
+  "currentVersionHelp": "현재 서비스 인스턴스에서 실행 중인 버전입니다.",
+  "latestVersion": "최신 버전",
+  "latestVersionHelp": "공식 GitHub Releases에서 가져온 가장 최신 버전입니다.",
+  "statusLabel": "업데이트 상태",
+  "statusLabelHelp": "실행 중인 버전과 최신 릴리스 버전의 비교 결과입니다.",
+  "checkedAt": "마지막 확인",
+  "checkedAtHelp": "공식 릴리스 정보를 성공적으로 가져온 가장 최근 시각입니다.",
+  "checkNow": "업데이트 확인",
+  "viewRelease": "업데이트 보기",
+  "openRelease": "Release 열기",
+  "releaseNotes": "릴리스 노트",
+  "releaseNotesHelp": "공식 GitHub Release에 게시된 버전 변경 요약입니다.",
+  "noReleaseNotes": "이 버전에는 릴리스 노트가 없습니다.",
+  "notChecked": "가져오지 않음",
+  "neverChecked": "아직 성공적으로 확인하지 못했습니다",
+  "available": "새 버전 {{version}} 사용 가능",
+  "currentSummary": "{{version}} 실행 중",
+  "status": {
+    "unchecked": "확인 전",
+    "up_to_date": "최신 버전",
+    "update_available": "업데이트 가능",
+    "check_failed": "확인 실패"
+  }
+}

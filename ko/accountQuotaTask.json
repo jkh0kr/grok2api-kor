@@ -1,0 +1,9 @@
+{
+  "title": "선택한 {{count}}개 계정의 쿼터 처리",
+  "description": "선택한 Grok Build 계정에 실행할 쿼터 작업을 선택하세요.",
+  "allTitle": "전체 계정 쿼터 처리",
+  "allDescription": "활성화된 모든 Grok Build 계정에 실행할 쿼터 작업을 선택하세요.",
+  "syncDescription": "업스트림 과금(Billing)에 요청하여 로컬 쿼터 스냅샷, 계정 등급, 복구 상태를 갱신합니다.",
+  "resetAllDescription": "활성화된 모든 Grok Build 계정의 재설정 대기 및 쿼터 소진 차단을 초기화합니다. 업스트림 과금이나 감사 기록은 변경되지 않습니다.",
+  "execute": "작업 실행"
+}

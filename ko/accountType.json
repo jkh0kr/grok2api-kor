@@ -1,0 +1,11 @@
+{
+  "label": "유형",
+  "free": "Free",
+  "paid": "Super",
+  "pending": "식별 대기",
+  "pendingDescription": "계정 상태는 정상이지만 쿼터 유형이 아직 식별되지 않았습니다.",
+  "auto": "Auto",
+  "super": "Super",
+  "heavy": "Heavy",
+  "console": "Console"
+}

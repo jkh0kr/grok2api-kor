@@ -1,0 +1,16 @@
+{
+  "action": "Console로 변환",
+  "allAction": "Console로 변환",
+  "selectedTitle": "선택한 Web 계정을 Console로 변환하시겠습니까?",
+  "selectedDescription": "선택한 Web 계정의 변환 범위를 선택하세요.",
+  "allTitle": "모든 Web 계정을 Console로 변환하시겠습니까?",
+  "allDescription": "변환 범위를 선택하세요. 모든 Web 계정은 배치로 처리됩니다.",
+  "strategyTitle": "변환 범위",
+  "missingStrategy": "누락분만 변환",
+  "missingStrategyDescription": "Grok Console 연결이 없는 계정만 SSO 자격 증명을 동기화합니다. 기존 Console 연결은 유지됩니다.",
+  "allStrategy": "전체 재변환",
+  "allStrategyDescription": "모든 대상의 SSO 자격 증명을 다시 동기화하고 해당 Grok Console 계정을 생성하거나 갱신합니다.",
+  "syncMissing": "누락된 계정 변환",
+  "syncAll": "전체 재변환",
+  "completed": "변환 완료: 신규 {{created}}, 갱신 {{updated}}, 건너뜀 {{skipped}}, 초기화 성공 {{synced}}, 실패 {{syncFailed}}"
+}

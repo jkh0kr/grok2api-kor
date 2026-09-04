@@ -1,0 +1,11 @@
+{
+  "action": "계정 변환",
+  "title": "계정 변환",
+  "allDescription": "대상 채널과 변환 범위를 선택하세요. 모든 Grok Web 계정은 백엔드가 배치로 처리합니다.",
+  "selectedDescription": "선택한 {{count}}개 Grok Web 계정의 대상 채널과 변환 범위를 선택하세요.",
+  "target": "대상 채널",
+  "strategy": "변환 범위",
+  "missing": "누락분만 변환",
+  "all": "전체 재변환",
+  "start": "변환 시작"
+}

@@ -1,0 +1,7 @@
+{
+  "countDescription": "안정적인 순서로 내보내며 배치당 최대 10,000개까지 처리합니다.",
+  "batchProgress": "{{count}}개 계정을 내보냈습니다. 다음은 {{batch}}번째 배치입니다.",
+  "nextBatch": "다음 배치 내보내기",
+  "batchCompleted": "이번 배치에서 {{count}}개 계정을 내보냈습니다",
+  "completed": "내보내기 완료: 총 {{count}}개 계정"
+}

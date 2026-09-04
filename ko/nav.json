@@ -1,0 +1,13 @@
+{
+  "dashboard": "대시보드",
+  "accounts": "계정",
+  "models": "모델",
+  "clientKeys": "클라이언트 키",
+  "creativeConsole": "크리에이티브 콘솔",
+  "gallery": "갤러리",
+  "videoGallery": "영상 갤러리",
+  "audits": "요청 감사",
+  "qualityGuard": "품질 가드",
+  "docs": "문서",
+  "settings": "설정"
+}

@@ -1,0 +1,10 @@
+{
+  "thirdParty": "서드파티",
+  "api": "API",
+  "build": "Grok Build",
+  "plugins": "Grok Plugins",
+  "chat": "채팅",
+  "imagine": "Imagine",
+  "voice": "음성",
+  "unknown": "상품 {{code}}"
+}

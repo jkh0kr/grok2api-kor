@@ -1,0 +1,16 @@
+{
+  "name": "Grok Console",
+  "type": "Console",
+  "accountsDescription": "Grok Build OAuth, Grok Web SSO, Grok Console SSO 계정 풀과 상태, 동시 처리, 쿼터를 각각 관리합니다.",
+  "egressDescription": "Grok Build, Grok Web, Grok Console, Web 리소스, Console 리소스별로 송신 노드의 프록시와 상태를 독립적으로 관리합니다. 프록시 주소와 Cloudflare 쿠키는 쓰기 전용입니다.",
+  "egressDialogDescription": "노드 범위, 프록시 주소, 브라우저 신원을 설정합니다.",
+  "syncAllDescription": "활성화된 모든 Grok Console 계정의 쿼터 상태를 동기화합니다.",
+  "importFile": "계정 파일 가져오기",
+  "quickImportTitle": "Grok Console 계정 빠른 가져오기",
+  "quickImportDescription": "여러 Console SSO 토큰을 붙여넣거나 한 줄에 토큰 하나씩 담긴 TXT 파일을 업로드하세요. 중복 항목은 자동으로 무시됩니다.",
+  "accountBreakdown": "Build {{build}} · Web {{web}} · Console {{console}}",
+  "availableBreakdown": "Build {{build}} · Web {{web}} · Console {{console}} 사용 가능",
+  "baseURL": "업스트림 주소",
+  "chatTimeout": "채팅 타임아웃",
+  "recoveryProbeAt": "다음 능동 복구 프로브 {{time}}"
+}

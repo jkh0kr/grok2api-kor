@@ -1,0 +1,8 @@
+{
+  "markInvalid": "오류 코드 일치 시 무효화",
+  "markInvalidHelp": "활성화하면 Grok Build가 403을 반환하고 아래 규칙에 오류 코드가 일치할 경우 계정을 무효로 표시하고 스케줄링에서 제외합니다.",
+  "codes": "무효화 오류 코드",
+  "codesHelp": "한 줄에 코드 하나씩 입력하세요. 코드는 JSON 응답의 code 또는 error.code 값과 대소문자 구분 없이 전체 일치하며 최대 32개까지 입력할 수 있습니다.",
+  "codesInvalid": "유효한 코드를 1–32개 입력하세요. 문자, 숫자, 점, 밑줄, 콜론, 하이픈만 사용할 수 있습니다.",
+  "codesPlaceholder": "permission-denied"
+}

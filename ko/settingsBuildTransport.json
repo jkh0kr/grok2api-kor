@@ -1,0 +1,6 @@
+{
+  "responseHeaderTimeout": "응답 헤더 타임아웃",
+  "responseHeaderTimeoutHelp": "요청 본문 전송 후 Grok Build의 첫 응답 헤더를 기다리는 최대 시간입니다.",
+  "streamIdleTimeout": "스트림 유휴 타임아웃",
+  "streamIdleTimeoutHelp": "유효한 생성 내용이나 도구 진행 상황이 없을 때 기다리는 최대 시간입니다. 킵얼라이브와 내부 제어 이벤트는 대기 시간을 연장하지 않으며, 초과 시 연결을 능동적으로 끊습니다."
+}

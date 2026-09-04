@@ -1,0 +1,15 @@
+{
+  "menu": "계정 설정",
+  "acceptTerms": "서비스 약관 동의",
+  "acceptTermsTitle": "서비스 약관에 동의하시겠습니까?",
+  "acceptTermsDescription": "이 계정으로 현재 xAI 서비스 약관에 동의합니다.",
+  "termsAccepted": "서비스 약관에 동의했습니다",
+  "setBirthDate": "생년월일 설정",
+  "setBirthDateTitle": "무작위 생년월일을 설정하시겠습니까?",
+  "setBirthDateDescription": "20–40세에 해당하는 생년월일을 무작위로 생성하여 업스트림에 제출합니다.",
+  "birthDateSaved": "무작위 생년월일이 설정되었습니다",
+  "enableNSFW": "NSFW 활성화",
+  "enableNSFWTitle": "NSFW를 활성화하시겠습니까?",
+  "enableNSFWDescription": "NSFW를 활성화하기 전에 20–40세에 해당하는 무작위 생년월일을 먼저 설정합니다.",
+  "nsfwEnabled": "무작위 생년월일과 NSFW가 설정되었습니다"
+}

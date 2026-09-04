@@ -1,0 +1,14 @@
+{
+  "action": "계정 도구",
+  "allTitle": "계정 도구",
+  "selectedTitle": "계정 도구 · 계정 {{count}}개",
+  "allDescription": "모든 Grok Web 계정을 확인하며, 아직 완료로 기록되지 않은 단계만 실행합니다.",
+  "selectedDescription": "선택한 계정에 대해 완료되지 않은 단계만 실행합니다. 개별 계정 실패는 나머지 배치를 중단하지 않습니다.",
+  "operations": "실행 단계",
+  "acceptTermsDescription": "현재 xAI 서비스 약관에 동의합니다.",
+  "setBirthDateDescription": "20–40세에 해당하는 무작위 생년월일을 생성합니다. NSFW 사용 시 필수입니다.",
+  "enableNSFWDescription": "생년월일 설정 후 성인 콘텐츠 선호 설정을 활성화합니다.",
+  "run": "작업 실행",
+  "completed": "계정 도구 완료: 성공 {{succeeded}}",
+  "completedWithFailures": "계정 도구 완료: 성공 {{succeeded}}, 실패 {{failed}}"
+}

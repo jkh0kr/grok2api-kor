@@ -1,0 +1,13 @@
+{
+  "convertAllToBuild": "Build로 변환",
+  "convertAllToBuildTitle": "모든 Grok Web 계정을 변환하시겠습니까?",
+  "convertAllToBuildDescription": "Web 계정 풀 전체의 변환 범위를 선택하세요. 작업은 백엔드가 배치로 처리합니다.",
+  "selectedDescription": "선택한 Web 계정의 변환 범위를 선택하세요. 진행률은 실제 변환 대상 계정만 집계합니다.",
+  "strategyTitle": "변환 범위",
+  "missingStrategy": "누락분만 변환",
+  "missingStrategyDescription": "Grok Build 연결이 없는 계정만 Device OAuth 변환을 실행합니다. 기존 Build 연결은 유지됩니다.",
+  "allStrategy": "전체 재변환",
+  "allStrategyDescription": "모든 대상에 대해 Device OAuth 변환을 다시 실행하고 해당 Grok Build 계정을 생성하거나 갱신합니다.",
+  "convertMissing": "누락된 계정 변환",
+  "convertAll": "전체 재변환"
+}
