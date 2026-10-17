@@ -1,0 +1,21 @@
+{
+  "创建 Chat Completion": "Chat Completion 생성",
+  "生成图片": "이미지 생성",
+  "删除 Response": "Response 삭제",
+  "创建 Anthropic Message": "Anthropic Message 생성",
+  "订阅中没有可用的代理节点": "구독에 사용 가능한 프록시 노드가 없습니다",
+  "tool_result 暂不支持 type=%q": "tool_result는 아직 type=%q을(를) 지원하지 않습니다",
+  "不支持 tool_choice.type=%q": "tool_choice.type=%q은(는) 지원하지 않습니다",
+  "messages 不能为空": "messages는 비어 있을 수 없습니다",
+  "function_call.name 无效": "function_call.name이 올바르지 않습니다",
+  "function_call_output.output 必须是字符串或 JSON": "function_call_output.output은 문자열 또는 JSON이어야 합니다",
+  "input_file 缺少 file_url 或 file_data": "input_file에 file_url 또는 file_data가 없습니다",
+  "Grok Web Statsig 刷新失败": "Grok Web Statsig 갱신에 실패했습니다",
+  "当前兼容层暂不支持 output.audio.file_id": "현재 호환 계층은 output.audio.file_id를 지원하지 않습니다",
+  "Grok Web Statsig 刷新后仍被拒绝": "Grok Web Statsig 갱신 후에도 거부되었습니다",
+  "TTS 请求无效": "TTS 요청이 올바르지 않습니다",
+  "STT multipart 请求无效": "STT multipart 요청이 올바르지 않습니다",
+  "请求体超过限制": "요청 본문이 한도를 초과했습니다",
+  "音频文件超过限制": "오디오 파일이 한도를 초과했습니다",
+  "使用 \\\"Bearer g2a_xxx_xxx\\\"。": "\\\"Bearer g2a_xxx_xxx\\\" 형식으로 사용하세요."
+}

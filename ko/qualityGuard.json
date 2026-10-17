@@ -41,7 +41,11 @@
     "node_quarantined": "노드 격리됨",
     "node_restored": "노드 복구됨",
     "node_rotated": "노드 IP 교체됨",
-    "passive_audit_anomaly": "비정상 요청 감지됨"
+    "passive_audit_anomaly": "비정상 요청 감지됨",
+    "lease_quarantined": "계정 리스 격리됨",
+    "lease_restored": "계정 리스 복구됨",
+    "lease_quarantine_extended": "계정 리스 격리 연장됨",
+    "lease_quarantine_failed": "계정 리스 격리 미실행"
   },
   "statistics": "자동 감지 통계",
   "statisticsSince": "{{time}} 이후 누적이며 수동 검사는 제외됩니다.",

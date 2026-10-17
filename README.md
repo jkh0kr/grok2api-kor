@@ -39,11 +39,14 @@ G2AK_NO_COMMIT=1 bash patch.sh    # 패치 커밋 생략
 
 | 대상 | 내용 |
 | :-- | :-- |
-| `frontend/src/shared/i18n/index.ts` | `ko` 로케일 추가(1,791 문구 전체 번역), 기본 언어 한국어, fallback en→zh-CN |
+| `frontend/src/shared/i18n/index.ts` | `ko` 로케일 추가(전체 문구 번역, zh-CN 전용 키 포함), 기본 언어 한국어, fallback en→zh-CN |
 | `frontend/src/app/app-shell.tsx` | 언어 메뉴에 "한국어" 항목 추가 |
 | `frontend/index.html` | `lang="ko"` |
-| `docker-compose.yml` | 타임존 기본값 `Asia/Seoul`, 포트 매핑 기본값 `13256:8000` (시놀로지 등 8000 불가 환경 대응) |
+| `backend/**/*.go` | **중국어 에러/로그 메시지 전량 한국어화** (관리 콘솔 토스트·API 오류 응답·docker logs) — Go 형식 동사 보호 검증 포함 |
+| `backend/docs/*` | swagger 문서 설명 한국어화 |
+| `docker-compose.yml` | 타임존 기본값 `Asia/Seoul`, 포트 매핑 기본값 `13256:8000`, 중국어 주석 번역 |
 | `Dockerfile` | `TZ=Asia/Seoul` |
+| `config.example.yaml` | 중국어 주석 전량 번역 |
 | `README.ko.md` | 한국어 사용 안내 배치 |
 | `.env` | `GROK2API_IMAGE=ghcr.io/jkh0kr/grok2api-kor:latest` — `docker compose up -d`만으로 한글 이미지 배포 |
 
@@ -54,11 +57,17 @@ upstream의 zh-CN/en 리소스는 그대로 보존되며, 바이너리·로직�
 ## 구조
 
 ```text
-patch.sh              # 진입점: upstream fetch → 외부 폴더에 패치 프로젝트 생성
-lib/extract-i18n.mjs  # upstream i18n 리소스 추출기 (TS 샌드박스 평가)
-lib/apply-patch.mjs   # 패치 적용기 + 사전 검증(누락/placeholder/드리프트)
-ko/*.json             # 한국어 번역 사전 (섹션별 — en 트리와 같은 구조)
-assets/README.ko.md   # 출력 프로젝트에 복사되는 한국어 README
+patch.sh                # 진입점: upstream fetch → 외부 폴더에 패치 프로젝트 생성
+lib/extract-i18n.mjs    # upstream i18n 리소스 추출기 (TS 샌드박스 평가)
+lib/apply-patch.mjs     # 패치 적용기 + 사전 검증(누락/placeholder/드리프트)
+lib/translate-backend.mjs # backend Go 메시지 한국어화 (상태 머신 스캐너 + 형식 동사 보호)
+lib/count-zh-strings.mjs  # 중국어 잔여 검사 도구 (런타임 문자열 vs 주석 구분)
+ko/*.json               # UI 번역 사전 (섹션별 — en 트리와 같은 구조)
+ko-backend.json         # backend 메시지 정확 매칭 사전
+ko-backend-parts/*.json # backend 메시지 사전 (분할)
+ko-backend-phrases.json # backend 구문 폴백 표
+ko-files.json           # compose/config 주석 번역 사전
+assets/README.ko.md     # 출력 프로젝트에 복사되는 한국어 README
 ```
 
 ## 번역 수정하기
