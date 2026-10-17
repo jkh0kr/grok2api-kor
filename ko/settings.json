@@ -314,7 +314,10 @@
     "autoCleanEnableDescription": "조건에 맞는 계정이 영구 삭제되어 복구할 수 없습니다. 첫 실행은 정리 간격 1회가 지난 뒤 시작됩니다.",
     "autoCleanIncludeDisabledTitle": "비활성 계정을 포함하시겠습니까?",
     "autoCleanIncludeDisabledDescription": "재인증이 필요한 비활성 계정도 영구 삭제됩니다. 이 작업은 되돌릴 수 없습니다.",
-    "autoCleanConfirm": "활성화 확인"
+    "autoCleanConfirm": "활성화 확인",
+    "degradedAccountTitle": "저하 계정 처리",
+    "autoDisableDegradedAccounts": "저하 계정 자동 비활성화",
+    "autoDisableDegradedAccountsHelp": "요청 경로 품질 검사와 재시도를 활성화합니다. missing-thinking 또는 저하 처리량 적중이 처음 확인되면 계정을 즉시 비활성화합니다. 비활성화하면 처리량 적중으로 계정이 비활성화되지 않고, missing-thinking 검사와 쿨다운은 기존 설정을 따릅니다."
   },
   "units": {
     "seconds": "초",
