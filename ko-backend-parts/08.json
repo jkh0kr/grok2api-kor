@@ -17,5 +17,6 @@
   "STT multipart 请求无效": "STT multipart 요청이 올바르지 않습니다",
   "请求体超过限制": "요청 본문이 한도를 초과했습니다",
   "音频文件超过限制": "오디오 파일이 한도를 초과했습니다",
-  "使用 \\\"Bearer g2a_xxx_xxx\\\"。": "\\\"Bearer g2a_xxx_xxx\\\" 형식으로 사용하세요."
+  "使用 \\\"Bearer g2a_xxx_xxx\\\"。": "\\\"Bearer g2a_xxx_xxx\\\" 형식으로 사용하세요.",
+  "获取 xAI consent 页面失败: %w": "xAI consent 페이지 가져오기 실패: %w"
 }
